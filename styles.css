@@ -75,3 +75,10 @@ input {
   color: black;
   font-size: 25px;
 }
+
+.fighting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
