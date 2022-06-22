@@ -1,0 +1,77 @@
+@import "reset.css";
+
+body {
+  color: #2e363e;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Wrapper {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.cal_content {
+  height: 15vh;
+  width: inherit;
+  display: flex;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #818181;
+  color: #c3c3c3;
+  width: 33vw;
+}
+
+input {
+  text-align: center;
+  width: 50vw;
+  font-size: 20px;
+  background-color: #f6f6f8;
+  border: none;
+}
+
+.ro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f8;
+  color: #c3c3c3;
+  width: 10vh;
+}
+
+.score {
+  height: 40vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a {
+  height: 8vh;
+  width: inherit;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 8vh;
+  width: 95vw;
+  color: black;
+  font-size: 25px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-TELP Calculator</title>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <div class="cal">
+        <div class="cal_content">
+          <div class="name">문법 맞은 개수</div>
+          <input type="number" id="gra" maxlength="2" />
+          <div class="ro">개</div>
+        </div>
+      </div>
+      <div class="cal">
+        <div class="cal_content">
+          <div class="name">청취 맞은 개수</div>
+          <input type="number" id="lis" maxlength="2" />
+          <div class="ro">개</div>
+        </div>
+      </div>
+      <div class="cal">
+        <div class="cal_content">
+          <div class="name">독해 맞은 개수</div>
+          <input type="number" id="wri" maxlength="2" />
+          <div class="ro">개</div>
+        </div>
+      </div>
+      <button class="btn" onclick="check()">환산하기</button>
+      <div class="score">
+        <div class="a">문법 : <span id="gra_sco"></span>점</div>
+        <div class="a">청취 : <span id="lis_sco"></span>점</div>
+        <div class="a">독해 : <span id="wri_sco"></span>점</div>
+        <div class="a">평균 : <span id="ave_sco"></span>점</div>
+      </div>
+    </div>
+    <script>
+      var a,
+        b,
+        c = 0;
+      gra.oninput = function () {
+        a = Math.round((gra.value / 26) * 100);
+      };
+      lis.oninput = function () {
+        b = Math.round((lis.value / 26) * 100);
+      };
+      wri.oninput = function () {
+        c = Math.round((wri.value / 26) * 100);
+      };
+      function check() {
+        gra_sco.innerHTML = a;
+        lis_sco.innerHTML = b;
+        wri_sco.innerHTML = c;
+        ave_sco.innerHTML = Math.ceil((a + b + c) / 3);
+      }
+    </script>
+  </body>
+</html>
